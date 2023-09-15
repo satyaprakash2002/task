@@ -2,37 +2,131 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: black;
+  background-image: url('./images/Picture\ 3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100rem 50rem;
+  background-position: top;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.txt{
+  color: #fff;
+  font-family: 'Agrandir', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.txt:hover{
+  color: #00d54b;
+  cursor: pointer;
+}
+
+.cashtext{
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  font-size: 13rem;
+  margin-top: 7rem;
+  z-index: -20;
+  position: relative;
+  letter-spacing: 2rem;
+}
+
+.apptext{
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  font-size: 13rem;
+  
+  position: relative;
+  z-index: 10;
+  letter-spacing: 1rem;
+  animation: apptext 2s ease-in-out forwards;
+}
+
+@keyframes apptext{
+  0%{
+    margin-top: 0;
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    margin-top: -21rem;
+    opacity: 1;
   }
+}
+
+.dolar{
+ position: absolute;
+ width: 1.5rem;
+ margin-left: 5rem ;
+ margin-top: 1rem;
+}
+
+.mobileimg{
+  position: absolute;
+  z-index: -10;
+  top: 10rem;
+  left: 37%;
+  width: 25rem;
+}
+
+.cube {
+  position: absolute;
+  height: auto;
+  width: 4rem;
+  top: -5rem;
+  left: 17rem;
+  animation: cubeAnimation 2s ease-in-out forwards;
+}
+
+@keyframes cubeAnimation {
+  0% {
+    top: -5rem;
+    opacity: 0;
+  }
+  100% {
+    top: 5rem;
+    opacity: 1;
+  }
+}
+
+.pilar{
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 25rem;
+  right: 15rem;
+}
+
+.stairs{
+  position: absolute;
+  height: auto;
+  width: 12rem;
+  right: 19rem;
+  top: 2rem;
+}
+
+.eye{
+  position: absolute;
+  height: auto;
+  width: 4rem;
+  right: 2rem;
+  top: 1rem;
 }
