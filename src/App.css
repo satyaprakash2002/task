@@ -31,6 +31,8 @@ body{
   line-height: 18px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  animation: stores 1s 3.5s ease-in-out forwards;
+  opacity: 0;
 }
 
 .txt:hover{
@@ -86,8 +88,21 @@ body{
 .dolar{
  position: absolute;
  width: 1.5rem;
- margin-left: 5rem ;
- margin-top: 1rem;
+ left: 5rem ;
+ top: 1rem;
+ opacity: 0;
+ animation: dolarAnimation 1s 2s ease-in-out forwards;
+}
+
+@keyframes dolarAnimation{
+  0%{
+    top: -1rem;
+    opacity: 0;
+  }
+  100%{
+    top: 1rem;
+    opacity: 1;
+  }
 }
 
 .mobileimg{
@@ -115,7 +130,7 @@ body{
   width: 4rem;
   top: -5rem;
   left: 17rem;
-  animation: cubeAnimation 3s ease-in-out forwards;
+  animation: cubeAnimation 1s 2s ease-in-out forwards;
 }
 
 @keyframes cubeAnimation {
@@ -131,10 +146,21 @@ body{
 
 .pilar{
   position: absolute;
-  bottom: 0;
   height: auto;
-  width: 25rem;
-  right: 15rem;
+  width: 22rem;
+  right: 20rem;
+  opacity: 0;
+  animation: pilarAnimation 1s 2s ease-in-out forwards;
+}
+
+@keyframes pilarAnimation{
+  0%{
+    bottom: -8rem;
+  }
+  100%{
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 .stairs{
@@ -142,7 +168,18 @@ body{
   height: auto;
   width: 12rem;
   right: 19rem;
-  top: 2rem;
+  opacity: 0;
+  animation: stairsAnimation 1s 2s ease-in-out forwards;
+}
+
+@keyframes stairsAnimation{
+  0%{
+    top: -10rem;
+  }
+  100%{
+    top: 2rem;
+    opacity: 1;
+  }
 }
 
 .eye{
@@ -157,6 +194,113 @@ body{
   position: absolute;
   height: auto;
   width: 14rem;
-  bottom: 6rem;
   left: 17rem;
+  opacity: 0;
+  animation: bigAnimation 1s 2s ease-in-out forwards;
+}
+
+@keyframes bigAnimation{
+  0%{
+    bottom: -8rem;
+  }
+  100%{
+    bottom: 6rem;
+    opacity: 1;
+  }
+}
+
+.sm1{
+  position: absolute;
+  border: #fff;
+  height: auto;
+  right: 11rem;
+  bottom: 5.7rem;
+  width: 1.8rem;
+}
+
+.sm2{
+  position: absolute;
+  border: #fff;
+  height: auto;
+  right: 7.8rem;
+  bottom: 6rem;
+  width: 1.8rem;
+}
+
+.sm3{
+  position: absolute;
+  border: #fff;
+  height: auto;
+  right: 5rem;
+  bottom: 6rem;
+  width: 1.8rem;
+}
+
+.pilartext{
+  position: absolute;
+  color: white;
+  bottom: 3rem;
+  right: 14rem;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.sm4{
+  height: auto;
+  width: 1.8rem;
+}
+
+.apple{
+  position: absolute;
+  bottom: 4rem;
+  left: 5rem;
+  animation: stores 1s 3.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.appletext{
+  position: relative;
+  color: #fff;
+  bottom: 3rem;
+  left: 2.5rem;
+}
+
+.googletext{
+  position: relative;
+  color: #fff;
+  bottom: 3rem;
+  left: 2.5rem;
+  background-color: black;
+}
+
+.sm5{
+  height: auto;
+  width: 1.8rem;
+}
+
+.googleplay{
+  position: absolute;
+  bottom: 4rem;
+  left: 14rem;
+  animation: stores 1s 3.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes stores{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.downarrow{
+  position: absolute;
+  bottom: 2.8rem;
+  left: 50%;
+  height: auto;
+  width: 1.5rem;
+  opacity: 0;
+  animation: stores 1s 3.5s ease-in-out forwards;
 }
