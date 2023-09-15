@@ -43,10 +43,21 @@ body{
   text-align: center;
   font-weight: 800;
   font-size: 13rem;
-  margin-top: 7rem;
   z-index: -20;
   position: relative;
   letter-spacing: 2rem;
+  animation: cashtext 2s ease-in-out forwards;
+}
+
+@keyframes cashtext{
+  0%{
+    margin-top: -15rem;
+    opacity: 0;
+  }
+  100%{
+    margin-top: 7rem;
+    opacity: 1;
+  }
 }
 
 .apptext{
@@ -63,11 +74,11 @@ body{
 
 @keyframes apptext{
   0%{
-    margin-top: 0;
+    bottom: -21rem;
     opacity: 0;
   }
   100%{
-    margin-top: -21rem;
+    bottom: 21rem;
     opacity: 1;
   }
 }
@@ -85,6 +96,17 @@ body{
   top: 10rem;
   left: 37%;
   width: 25rem;
+  opacity: 0;
+  animation: mobileimgAnimation 2s 2s ease-in-out forwards;
+}
+
+@keyframes mobileimgAnimation{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .cube {
@@ -93,7 +115,7 @@ body{
   width: 4rem;
   top: -5rem;
   left: 17rem;
-  animation: cubeAnimation 2s ease-in-out forwards;
+  animation: cubeAnimation 3s ease-in-out forwards;
 }
 
 @keyframes cubeAnimation {
@@ -129,4 +151,12 @@ body{
   width: 4rem;
   right: 2rem;
   top: 1rem;
+}
+
+.bigstair{
+  position: absolute;
+  height: auto;
+  width: 14rem;
+  bottom: 6rem;
+  left: 17rem;
 }

@@ -5,16 +5,19 @@ import cube from '../images/Picture 4.png'
 import pilar from '../images/Picture 5.png'
 import stairs from '../images/Picture 6.png'
 import eye from '../images/Picture 7.png'
+import bigstair from '../images/Picture 8.png'
+import sm1 from '../images/sm 1.png'
  
 
 const main = () => {
   return (
     <>
-    <img className='dolar' src={dolar} ></img>
-    <img className='cube' src={cube}></img>
-    <img className='pilar' src={pilar}></img>
-    <img className='stairs' src={stairs}></img>
-    <img className='eye' src={eye}></img>
+      <img className="dolar" src={dolar}></img>
+      <img className="cube" src={cube}></img>
+      <img className="pilar" src={pilar}></img>
+      <img className="stairs" src={stairs}></img>
+      <img className="eye" src={eye}></img>
+      <img className="bigstair" src={bigstair} />
       <div className="menu">
         <h1 className="txt">sign in</h1>
         <h1 className="txt">legal</h1>
@@ -28,8 +31,11 @@ const main = () => {
       </div>
       <div>
         <p className="cashtext">CASH</p>
-        <img src={mobile} className='mobileimg'></img>
+        <img src={mobile} className="mobileimg"></img>
         <p className="apptext">APP</p>
+        <img src={} />
+        <img />
+        <img />
       </div>
     </>
   );
